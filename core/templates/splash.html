@@ -1,0 +1,48 @@
+<html>  
+  <head>
+    <title>Heart to Heart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css?family=Meddon&display=swap" rel="stylesheet">
+    <style>
+      #special {
+        text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+        font-family: 'Meddon', cursive;
+        font-size: 70px;
+        color: #fff;
+      }
+      #grad {
+        background-image: linear-gradient(to bottom right, red, white);
+      }
+    </style>
+
+  </head>
+  <body id="grad">
+      <div class="container-fluid min-100 d-flex flex-column" >  
+        <div style="text-align: center; margin-top: 10%;">
+          <h2>let's have a</h2>
+          <h1 id = "special">heart to heart</h1>
+          ❤️ ❤️ ❤️ <br>
+          One person dies every 37 seconds in the United States from cardiovascular disease.
+          <br>
+          Check for your risk of heart disease <b>today</b>.
+        </div>
+        <br>
+        <div style="text-align: center;">
+          <form method="POST" action="/login">
+            {% csrf_token %}
+            <div class="form-group" style="margin: 5px 35%">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+            <div class="form-group" style="margin: 5px 35%">
+              <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-danger">Login</button>
+          </form>
+          <p style="margin: 5px">Don't already have an account?</p>
+          <a href="/signup"><button class="btn btn-outline-danger">Sign up</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
