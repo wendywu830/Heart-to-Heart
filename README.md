@@ -1,4 +1,4 @@
-# Twitter (CIS 192 HW6)
+# CIS 192 Final Project
 
 ### How to Run
 1. After cloning/downloading, `cd Final`
