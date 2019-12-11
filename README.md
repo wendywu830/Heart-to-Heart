@@ -1,7 +1,7 @@
 # CIS 192 Final Project
 
 ### How to Run
-1. After cloning/downloading, `cd Final`
+1. After cloning/downloading, `cd 192Final-Project`
 2. `pip install -r requirements.txt`
 3. `python manage.py makemigrations core`
 4. `python manage.py migrate`
