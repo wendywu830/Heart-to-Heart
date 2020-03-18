@@ -1,4 +1,4 @@
-# CIS 192 Final Project
+# Heart to Heart
 
 ### How to Run
 1. After cloning/downloading, `cd 192Final-Project`
